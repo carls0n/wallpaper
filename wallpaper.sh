@@ -16,7 +16,6 @@ while [[ -z "$new_wallpaper" || "$new_wallpaper" == "$current_wallpaper" ]]; do
 if (( count >= 10 )); then
 return 1
 fi
-
 mapfile -t items < <(/usr/bin/find $wallpaper_directory -type f 2>/dev/null)
 num_items=${#items[@]}
 random_index=$(( RANDOM % num_items ))
