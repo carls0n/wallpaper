@@ -16,11 +16,11 @@ while [[ -z "$new_wallpaper" || "$new_wallpaper" == "$current_wallpaper" ]]; do
 if (( count >= 10 )); then
 return 1
 fi
-new_wallpaper=$(/usr/bin/find /home/marc/wallpaper/gunmetal -type f 2>/dev/null | /usr/bin/shuf -n 1)
-#mapfile -t items < <(/usr/bin/find $wallpaper_directory -type f 2>/dev/null)
-#num_items=${#items[@]}
-#random_index=$(( RANDOM % num_items ))
-#new_wallpaper="${items[random_index]}"
+
+mapfile -t items < <(/usr/bin/find $wallpaper_directory -type f 2>/dev/null)
+num_items=${#items[@]}
+random_index=$(( RANDOM % num_items ))
+new_wallpaper="${items[random_index]}"
 done
 if [[ -n "$new_wallpaper" && "$new_wallpaper" != "$current_wallpaper" ]]; then
 echo "$new_wallpaper"
@@ -38,6 +38,7 @@ new_wallpaper=$(get_new_wallpaper)
 /usr/bin/xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/last-image -s "$new_wallpaper"
 }
 
+set_wallpaper
 
 while :
 do
