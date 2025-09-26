@@ -25,7 +25,6 @@ return 0 # Return success
 }
 
 function signalrtmax {
-SIGNAL_CAUGHT=true
 nextImage
 }
 
