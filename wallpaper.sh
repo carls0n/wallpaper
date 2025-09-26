@@ -25,11 +25,11 @@ return 0 # Return success
 }
 
 function signalrtmax {
-nextImage
+set_wallpaper
 }
 
 # Function to set the new wallpaper
-function nextImage {
+function set_wallpaper {
 new_wallpaper=$(get_new_wallpaper)
 /usr/bin/xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/last-image -s "$new_wallpaper"
 }
