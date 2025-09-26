@@ -2,7 +2,7 @@
 Change your XFCE wallpaper on the fly by sending a kill -64 signal to this scripts PID.<br>
 
 
-## Usage
+## Basic Usage
 ```
 ./wallpaper.sh &
 ```
