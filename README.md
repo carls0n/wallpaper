@@ -11,7 +11,7 @@ pgrep -f wallpaper.sh | xargs kill -64
 ```
 
 ## Automatically Change Wallpaper
-If you would like to add a cronjob to automatically change the wallpaper every night at midnight for example, Use the following<br>
+If you would like to add a cronjob to automatically change the wallpaper every night at midnight for example,<br>
 
 ```
 crontab -e
