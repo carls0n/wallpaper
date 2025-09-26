@@ -1,5 +1,5 @@
 # XFCE Wallpaper changer
-Change your XFCE wallpaper on the fly by sending a kill -64 signal to this scripts PID
+Change your XFCE wallpaper on the fly by sending a kill -64 signal to this scripts PID. Requires shuf install
 
 # Usage
 * ./wallpaper.sh &<br>
