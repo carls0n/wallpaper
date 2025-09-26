@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wallpaper_directory=/home/marc/wallpaper/gunmetal
+wallpaper_directory=/path/to/directory/
 
 # Trap signalrtmax SIGRTMAX
 trap signalrtmax SIGRTMAX
