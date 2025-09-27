@@ -7,7 +7,7 @@ Change your XFCE wallpaper on the fly by sending a kill -64 signal to this scrip
 ./wallpaper.sh &
 ```
 ```
-pgrep -f wallpaper.sh | xargs kill -64
+pgrep wallpaper.sh | xargs kill -64
 ```
 
 ## Automatically Change Wallpaper
