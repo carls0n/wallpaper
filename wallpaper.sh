@@ -4,7 +4,7 @@ wallpaper_directory=/path/to/directory/
 
 # Trap signalrtmax SIGRTMAX
 trap signalrtmax SIGRTMAX
-trap "exit 0" SIGTERM SIGKILL SIGSTOP SIGINT
+trap "exit 0" SIGTERM SIGINT
 
 # Function to select a new random wallpaper that is different from the current one
 get_new_wallpaper() {
