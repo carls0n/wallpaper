@@ -17,4 +17,4 @@ If you would like to add a cronjob to automatically change the wallpaper every n
 crontab -e
 ```
 ```
-0 0 * * * pgrep -f wallpaper.sh | xargs kill -64
+0 0 * * * pgrep wallpaper.sh | xargs kill -64
