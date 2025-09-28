@@ -3,9 +3,18 @@ Change your XFCE wallpaper on the fly by sending a kill -64 signal to this scrip
 
 
 ## Basic Usage
+start wallpaper.sh in the background
 ```
 ./wallpaper.sh &
 ```
+You can then obtain the PID of the running script like this
+```
+pidof -x wallpaper.sh
+```
+```
+kill -64 PID
+```
+or alternatively you can use
 ```
 pgrep wallpaper.sh | xargs kill -64
 ```
