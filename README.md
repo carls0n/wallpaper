@@ -7,7 +7,7 @@ start wallpaper.sh in the background
 ```
 ./wallpaper.sh &
 ```
-You can then obtain the PID of the running script and send the kill -64 signal like this
+You can then obtain the PID of the running script and send the SIGRTMAX signal like this
 ```
 pidof -x wallpaper.sh
 ```
