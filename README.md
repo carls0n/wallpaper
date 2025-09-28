@@ -3,7 +3,7 @@ Change your XFCE wallpaper on the fly by sending a kill -64 signal to this scrip
 
 
 ## Basic Usage
-start wallpaper.sh in the background
+Start wallpaper.sh in the background
 ```
 ./wallpaper.sh &
 ```
