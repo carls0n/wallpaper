@@ -14,10 +14,6 @@ pidof -x wallpaper.sh
 ```
 kill -64 PID
 ```
-or alternatively you can use
-```
-pgrep wallpaper.sh | xargs kill -64
-```
 
 ## Automatically Change Wallpaper
 If you would like to add a cronjob to automatically change the wallpaper every night at midnight for example,<br>
